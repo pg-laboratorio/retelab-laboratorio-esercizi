@@ -1,0 +1,615 @@
+{
+ "devices": [
+  {
+   "id": "d1",
+   "type": "router",
+   "name": "R1",
+   "x": 600,
+   "y": 120,
+   "ifaces": [
+    {
+     "name": "G0/0",
+     "ip": "192.168.10.1",
+     "mask": "255.255.255.0",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:50:e2:45:a9:a0",
+     "lease": null
+    },
+    {
+     "name": "G0/1",
+     "ip": "192.168.20.1",
+     "mask": "255.255.255.0",
+     "mode": "static",
+     "vlan": 1,
+     "up": false,
+     "mac": "00:60:de:0e:11:f3",
+     "lease": null
+    },
+    {
+     "name": "G0/2",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": false,
+     "mac": "00:50:a6:47:c1:aa",
+     "lease": null
+    },
+    {
+     "name": "G0/3",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": false,
+     "mac": "00:0c:62:a8:49:95",
+     "lease": null
+    }
+   ],
+   "dhcp": {
+    "pools": [],
+    "excl": []
+   },
+   "gw": "",
+   "dns": "",
+   "routes": [],
+   "nat": {
+    "on": false,
+    "outside": ""
+   },
+   "fw": {
+    "def": "deny",
+    "rules": []
+   },
+   "svc": {
+    "http": {
+     "on": false,
+     "title": "",
+     "body": ""
+    },
+    "dns": {
+     "on": false,
+     "records": []
+    },
+    "dhcp": {
+     "on": false,
+     "start": "",
+     "end": "",
+     "mask": "",
+     "gw": "",
+     "dns": ""
+    }
+   }
+  },
+  {
+   "id": "d2",
+   "type": "switch",
+   "name": "Switch-A",
+   "x": 360,
+   "y": 300,
+   "ifaces": [
+    {
+     "name": "Fa0/1",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:60:ae:14:81:a7",
+     "lease": null
+    },
+    {
+     "name": "Fa0/2",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:e0:58:d3:31:6e",
+     "lease": null
+    },
+    {
+     "name": "Fa0/3",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:d0:8a:e2:6d:c5",
+     "lease": null
+    },
+    {
+     "name": "Fa0/4",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:1a:f8:81:15:84",
+     "lease": null
+    },
+    {
+     "name": "Fa0/5",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:60:ae:e0:d1:4b",
+     "lease": null
+    },
+    {
+     "name": "Fa0/6",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:50:80:8f:81:e2",
+     "lease": null
+    },
+    {
+     "name": "Fa0/7",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:0c:b2:3e:d5:69",
+     "lease": null
+    },
+    {
+     "name": "Fa0/8",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:e0:c0:dd:bd:d8",
+     "lease": null
+    }
+   ],
+   "dhcp": {
+    "pools": [],
+    "excl": []
+   },
+   "gw": "",
+   "dns": "",
+   "routes": [],
+   "nat": {
+    "on": false,
+    "outside": ""
+   },
+   "fw": {
+    "def": "deny",
+    "rules": []
+   },
+   "svc": {
+    "http": {
+     "on": false,
+     "title": "",
+     "body": ""
+    },
+    "dns": {
+     "on": false,
+     "records": []
+    },
+    "dhcp": {
+     "on": false,
+     "start": "",
+     "end": "",
+     "mask": "",
+     "gw": "",
+     "dns": ""
+    }
+   }
+  },
+  {
+   "id": "d3",
+   "type": "switch",
+   "name": "Switch-B",
+   "x": 840,
+   "y": 300,
+   "ifaces": [
+    {
+     "name": "Fa0/1",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:50:88:1f:71:1e",
+     "lease": null
+    },
+    {
+     "name": "Fa0/2",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:0c:42:08:01:17",
+     "lease": null
+    },
+    {
+     "name": "Fa0/3",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:50:ec:fd:45:68",
+     "lease": null
+    },
+    {
+     "name": "Fa0/4",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:d0:b2:5e:c5:b9",
+     "lease": null
+    },
+    {
+     "name": "Fa0/5",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:50:40:23:79:0a",
+     "lease": null
+    },
+    {
+     "name": "Fa0/6",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:d0:fa:74:c1:ab",
+     "lease": null
+    },
+    {
+     "name": "Fa0/7",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:50:ec:11:55:a4",
+     "lease": null
+    },
+    {
+     "name": "Fa0/8",
+     "ip": "",
+     "mask": "",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:0c:aa:9a:1d:4d",
+     "lease": null
+    }
+   ],
+   "dhcp": {
+    "pools": [],
+    "excl": []
+   },
+   "gw": "",
+   "dns": "",
+   "routes": [],
+   "nat": {
+    "on": false,
+    "outside": ""
+   },
+   "fw": {
+    "def": "deny",
+    "rules": []
+   },
+   "svc": {
+    "http": {
+     "on": false,
+     "title": "",
+     "body": ""
+    },
+    "dns": {
+     "on": false,
+     "records": []
+    },
+    "dhcp": {
+     "on": false,
+     "start": "",
+     "end": "",
+     "mask": "",
+     "gw": "",
+     "dns": ""
+    }
+   }
+  },
+  {
+   "id": "d6",
+   "type": "pc",
+   "name": "PC-A1",
+   "x": 240,
+   "y": 500,
+   "ifaces": [
+    {
+     "name": "eth0",
+     "ip": "192.168.10.10",
+     "mask": "255.255.255.0",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:1a:0e:01:05:8c",
+     "lease": null
+    }
+   ],
+   "dhcp": {
+    "pools": [],
+    "excl": []
+   },
+   "gw": "192.168.10.254",
+   "dns": "",
+   "routes": [],
+   "nat": {
+    "on": false,
+    "outside": ""
+   },
+   "fw": {
+    "def": "deny",
+    "rules": []
+   },
+   "svc": {
+    "http": {
+     "on": false,
+     "title": "",
+     "body": ""
+    },
+    "dns": {
+     "on": false,
+     "records": []
+    },
+    "dhcp": {
+     "on": false,
+     "start": "",
+     "end": "",
+     "mask": "",
+     "gw": "",
+     "dns": ""
+    }
+   }
+  },
+  {
+   "id": "d8",
+   "type": "pc",
+   "name": "PC-A2",
+   "x": 480,
+   "y": 500,
+   "ifaces": [
+    {
+     "name": "eth0",
+     "ip": "192.168.10.10",
+     "mask": "255.255.255.0",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:50:f6:c7:bd:46",
+     "lease": null
+    }
+   ],
+   "dhcp": {
+    "pools": [],
+    "excl": []
+   },
+   "gw": "192.168.10.1",
+   "dns": "",
+   "routes": [],
+   "nat": {
+    "on": false,
+    "outside": ""
+   },
+   "fw": {
+    "def": "deny",
+    "rules": []
+   },
+   "svc": {
+    "http": {
+     "on": false,
+     "title": "",
+     "body": ""
+    },
+    "dns": {
+     "on": false,
+     "records": []
+    },
+    "dhcp": {
+     "on": false,
+     "start": "",
+     "end": "",
+     "mask": "",
+     "gw": "",
+     "dns": ""
+    }
+   }
+  },
+  {
+   "id": "d10",
+   "type": "pc",
+   "name": "PC-B1",
+   "x": 720,
+   "y": 500,
+   "ifaces": [
+    {
+     "name": "eth0",
+     "ip": "192.168.20.10",
+     "mask": "255.255.0.0",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:60:32:a2:45:e9",
+     "lease": null
+    }
+   ],
+   "dhcp": {
+    "pools": [],
+    "excl": []
+   },
+   "gw": "192.168.20.1",
+   "dns": "",
+   "routes": [],
+   "nat": {
+    "on": false,
+    "outside": ""
+   },
+   "fw": {
+    "def": "deny",
+    "rules": []
+   },
+   "svc": {
+    "http": {
+     "on": false,
+     "title": "",
+     "body": ""
+    },
+    "dns": {
+     "on": false,
+     "records": []
+    },
+    "dhcp": {
+     "on": false,
+     "start": "",
+     "end": "",
+     "mask": "",
+     "gw": "",
+     "dns": ""
+    }
+   }
+  },
+  {
+   "id": "d12",
+   "type": "pc",
+   "name": "PC-B2",
+   "x": 960,
+   "y": 500,
+   "ifaces": [
+    {
+     "name": "eth0",
+     "ip": "192.168.21.11",
+     "mask": "255.255.255.0",
+     "mode": "static",
+     "vlan": 1,
+     "up": true,
+     "mac": "00:d0:06:f8:21:37",
+     "lease": null
+    }
+   ],
+   "dhcp": {
+    "pools": [],
+    "excl": []
+   },
+   "gw": "192.168.20.1",
+   "dns": "",
+   "routes": [],
+   "nat": {
+    "on": false,
+    "outside": ""
+   },
+   "fw": {
+    "def": "deny",
+    "rules": []
+   },
+   "svc": {
+    "http": {
+     "on": false,
+     "title": "",
+     "body": ""
+    },
+    "dns": {
+     "on": false,
+     "records": []
+    },
+    "dhcp": {
+     "on": false,
+     "start": "",
+     "end": "",
+     "mask": "",
+     "gw": "",
+     "dns": ""
+    }
+   }
+  }
+ ],
+ "links": [
+  {
+   "id": "l4",
+   "a": {
+    "d": "d1",
+    "i": "G0/0"
+   },
+   "b": {
+    "d": "d2",
+    "i": "Fa0/1"
+   }
+  },
+  {
+   "id": "l5",
+   "a": {
+    "d": "d1",
+    "i": "G0/1"
+   },
+   "b": {
+    "d": "d3",
+    "i": "Fa0/1"
+   }
+  },
+  {
+   "id": "l7",
+   "a": {
+    "d": "d2",
+    "i": "Fa0/2"
+   },
+   "b": {
+    "d": "d6",
+    "i": "eth0"
+   }
+  },
+  {
+   "id": "l9",
+   "a": {
+    "d": "d2",
+    "i": "Fa0/3"
+   },
+   "b": {
+    "d": "d8",
+    "i": "eth0"
+   }
+  },
+  {
+   "id": "l11",
+   "a": {
+    "d": "d3",
+    "i": "Fa0/2"
+   },
+   "b": {
+    "d": "d10",
+    "i": "eth0"
+   }
+  },
+  {
+   "id": "l13",
+   "a": {
+    "d": "d3",
+    "i": "Fa0/3"
+   },
+   "b": {
+    "d": "d12",
+    "i": "eth0"
+   }
+  }
+ ],
+ "seq": 14,
+ "exercise": true
+}
