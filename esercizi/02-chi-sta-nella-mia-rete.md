@@ -8,7 +8,7 @@ Capire come la subnet mask decide quali host sono raggiungibili direttamente.
 
 ## Istruzioni
 
-1. Parti da un progetto vuoto. Aggiungi uno switch e quattro PC, tutti collegati allo switch.
+1. Parti da una rete vuota (**Nuova rete**). Aggiungi uno switch e quattro PC, tutti collegati allo switch.
 2. Configura gli indirizzi della tabella. Fai attenzione: le mask non sono tutte uguali.
 3. Prima di provare, compila la colonna «Previsione»: PC1 riuscirà a pingare quel PC?
 4. Esegui i ping da PC1 verso gli altri tre PC e compila la colonna «Risultato».

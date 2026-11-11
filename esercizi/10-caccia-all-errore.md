@@ -51,4 +51,4 @@ Quale dei due guasti che avete ricevuto si vedeva subito, e quale era nascosto? 
 
 ---
 
-[← Esercizio precedente](09-seguire-un-pacchetto.md) · [Soluzione](../soluzioni/10-caccia-all-errore.md) · [Torna all'indice](../README.md)
+[← Esercizio precedente](09-seguire-un-pacchetto.md) · [Soluzione](../soluzioni/10-caccia-all-errore.md) · [Esercizio successivo →](11-tabella-mac.md)

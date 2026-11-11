@@ -26,7 +26,7 @@
    ```
 
    Sullo schema il pacchetto parte da PC1, attraversa lo switch e torna indietro.
-2. No. Lo switch lavora a livello 2: legge l'indirizzo MAC di destinazione di ogni trama e la inoltra sulla porta giusta, consultando la propria tabella MAC. Un IP servirebbe solo per gestirlo da remoto. Infatti in ReteLab lo switch non ha nessun campo per l'indirizzo IP.
+2. No. Lo switch lavora a livello 2: legge l'indirizzo MAC di destinazione di ogni trama e la inoltra sulla porta giusta, consultando la propria tabella MAC. Un IP servirebbe solo per gestirlo da remoto. Infatti in ReteLab lo switch non ha nessun campo per l'indirizzo IP. In ReteLab la tabella si vede nella scheda **Tabella MAC** dello switch, o con `show mac address-table` nel suo terminale: dopo il ping contiene i MAC dei due PC. Ne parla l'[esercizio 11](../esercizi/11-tabella-mac.md).
 3. Il ping fallisce con quattro «Richiesta scaduta». PC1 confronta la destinazione con la propria rete: 192.168.2.11 con mask /24 appartiene a 192.168.2.0, non a 192.168.1.0. PC1 dovrebbe affidare il pacchetto al gateway, ma il gateway non c'è. Il pacchetto non parte nemmeno, anche se i due PC sono fisicamente sullo stesso switch: sullo schema non si muove nulla.
 
 ## Errori frequenti

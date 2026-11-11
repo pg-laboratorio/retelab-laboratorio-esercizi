@@ -15,7 +15,7 @@ flowchart LR
 
 ## Istruzioni
 
-1. Apri [ReteLab](https://pg-laboratorio.github.io/retelab/) e scegli **Carica esempio → Progetto vuoto**.
+1. Apri [ReteLab](https://pg-laboratorio.github.io/retelab/) e premi **Nuova rete**.
 2. Dall'elenco **Dispositivi** aggiungi uno switch e due PC: si chiamano già PC1 e PC2.
 3. Scegli lo strumento **Cavo** e collega ciascun PC allo switch: clicca il PC, poi lo switch.
 4. Clicca ogni PC e, nella scheda **Configurazione**, assegna gli indirizzi della tabella.

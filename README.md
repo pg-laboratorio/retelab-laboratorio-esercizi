@@ -1,8 +1,8 @@
 # ReteLab – Laboratorio di networking
 
-Dieci esercizi pratici di networking da svolgere nel browser con **[ReteLab](https://pg-laboratorio.github.io/retelab/)**, il simulatore di reti del laboratorio. Si parte da due PC collegati a uno switch e si arriva alla rete di un'azienda divisa per reparti.
+Undici esercizi pratici di networking da svolgere nel browser con **[ReteLab](https://pg-laboratorio.github.io/retelab/)**, il simulatore di reti del laboratorio. Si parte da due PC collegati a uno switch, si arriva alla rete di un'azienda divisa per reparti e si guarda dentro lo switch, alla sua tabella MAC.
 
-Gli esercizi mettono in pratica gli argomenti del corso: indirizzi IP e subnet mask, switch e router, gateway predefinito, DHCP, indirizzi MAC e ARP, diagnosi dei guasti. I router si configurano con i comandi in stile Cisco.
+Gli esercizi mettono in pratica gli argomenti del corso: indirizzi IP e subnet mask, switch e router, gateway predefinito, DHCP, indirizzi MAC e ARP, tabella MAC degli switch, diagnosi dei guasti. I router si configurano con i comandi in stile Cisco, e anche gli switch hanno un terminale per consultare la tabella MAC.
 
 ## Come iniziare
 
@@ -26,15 +26,17 @@ Alcuni esercizi partono da una rete già pronta, nella cartella [`reti`](reti/).
 | 8 | [Dividere la rete per reparti](esercizi/08-rete-per-reparti.md) | Sottoreti, domini di broadcast | [parte A, facoltativa](reti/08-parte-a.json) | 60 min |
 | 9 | [Seguire un pacchetto](esercizi/09-seguire-un-pacchetto.md) | MAC, IP, ARP | [rete dell'es. 3](reti/rete-esercizio-3.json) | 50 min |
 | 10 | [Caccia all'errore a squadre](esercizi/10-caccia-all-errore.md) | Troubleshooting a squadre | [rete dell'es. 3](reti/rete-esercizio-3.json) | 2 ore |
+| 11 | [Come impara uno switch](esercizi/11-tabella-mac.md) | Tabella MAC, flooding | [tre switch in catena](reti/11-tre-switch.json) | 45 min |
 
 ## Consegna
 
 Per ogni esercizio consegna:
 
-- il file della rete: **Esporta → Scarica file .json**, con il nome `Cognome_EsN` (per esempio `Rossi_Es3`);
-- uno screenshot della topologia;
-- la tabella degli indirizzi compilata;
+- il **documento PDF** della rete: pulsante **PDF**, compila studente, classe ed esercizio, poi **Scarica PDF**. Contiene lo schema, il piano degli indirizzi, i collegamenti e la configurazione di ogni dispositivo, quindi sostituisce screenshot e tabella degli indirizzi compilata a mano;
+- il file della rete: **Esporta → Scarica file .json**, con il nome `Cognome_EsN` (per esempio `Rossi_Es3`), così il docente può aprirla e provarla;
 - le risposte alle domande.
+
+Se lo scaricamento del PDF non funziona (per esempio perché la rete della scuola blocca la libreria), nella stessa finestra usa **Stampa…** e scegli «Salva come PDF».
 
 ## Comandi utili
 
@@ -51,6 +53,9 @@ Per ogni esercizio consegna:
 | Router | `show ip route` | Tabella di routing |
 | Router | `show ip dhcp binding` | Indirizzi assegnati dal DHCP |
 | Router | `show arp` | Tabella ARP del router |
+| Switch | `show mac address-table` | Tabella MAC: quale MAC si raggiunge da quale porta |
+| Switch | `clear mac address-table dynamic` | Svuota la tabella MAC (dopo `enable`) |
+| Switch | `show vlan brief` | VLAN e porte assegnate |
 
 `help` nel terminale elenca tutti i comandi disponibili. Dopo un ping, il pulsante **Pacchetti** mostra il viaggio tratto per tratto, con indirizzi MAC e IP.
 
