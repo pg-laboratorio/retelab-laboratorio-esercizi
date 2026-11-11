@@ -40,7 +40,7 @@ Il pannello **Pacchetti** mostra le stesse righe. Nel primo ping compaiono anche
 1. No. Dopo il ping a PC-B1, `arp -a` su PC-A1 mostra 192.168.10.1 con il MAC dell'interfaccia del router (MAC-R1a). PC-A1 sa che PC-B1 è in un'altra rete, quindi non lo cerca nemmeno: chiede via ARP il MAC del gateway e consegna a lui la trama.
 2. I MAC cambiano nel router, a ogni passaggio da una rete all'altra. Gli IP non cambiano mai lungo il percorso (in assenza di NAT).
 3. Si scambiano: la sorgente della richiesta diventa la destinazione della risposta, sia per i MAC sia per gli IP.
-4. Lo switch lavora a livello 2: inoltra la trama leggendo il MAC di destinazione, senza modificarla. Il router lavora a livello 3: legge l'IP, decide l'uscita e costruisce una trama nuova con i MAC della rete di destinazione. I MAC valgono solo dentro la rete locale, gli IP da un capo all'altro.
+4. Lo switch lavora a livello 2: inoltra la trama leggendo il MAC di destinazione e cercandolo nella sua tabella MAC, senza modificarla (lo vedrai nell'[esercizio 11](../esercizi/11-tabella-mac.md)). Il router lavora a livello 3: legge l'IP, decide l'uscita e costruisce una trama nuova con i MAC della rete di destinazione. I MAC valgono solo dentro la rete locale, gli IP da un capo all'altro.
 
 Su R1, `show arp` dopo il ping contiene sia PC-A1 sia PC-B1 (oltre alle sue due interfacce, con età «-»): è il router che conosce entrambe le reti.
 
